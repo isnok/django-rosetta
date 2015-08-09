@@ -70,7 +70,7 @@ is_fuzzy = register.filter(is_fuzzy)
 
 class RosettaCsrfTokenPlaceholder(Node):
     def render(self, context):
-        return mark_safe(u"<!-- csrf token placeholder -->")
+        return mark_safe("<!-- csrf token placeholder -->")
 
 
 def rosetta_csrf_token(parser, token):
